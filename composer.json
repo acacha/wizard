@@ -1,0 +1,18 @@
+{
+    "name": "acacha/wizard",
+    "description": "Multi-step wizard forms for Laravel",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergi Tur Badenas",
+            "email": "sergiturbadenas@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {"Acacha\\Wizard\\": "src/"}
+    },
+    "require": {
+        "laravel/framework": "^5.3"
+    }
+}

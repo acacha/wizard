@@ -1,0 +1,4 @@
+suites:
+    wizard_suite:
+        namespace: Acacha\Wizard
+        src_path:  src
