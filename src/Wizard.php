@@ -21,6 +21,6 @@ class Wizard extends Model
      */
     public function steps()
     {
-        return $this->belongsToMany(WizardStep::class);
+        return $this->belongsToMany(Step::class);
     }
 }

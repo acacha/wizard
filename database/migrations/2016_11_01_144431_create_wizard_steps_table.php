@@ -13,7 +13,7 @@ class CreateWizardStepsTable extends Migration
      */
     public function up()
     {
-        Schema::create('wizard_steps', function (Blueprint $table) {
+        Schema::create('steps', function (Blueprint $table) {
             $table->increments('id');
             $table->string('name')->unique();
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateWizardStepsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('wizard_steps');
+        Schema::dropIfExists('steps');
     }
 }

@@ -1,5 +1,7 @@
 <?php
 
+namespace Acacha\Wizard\Http\Controllers;
+
 use Acacha\Wizard\Wizard;
 use Acacha\Wizard\WizardManager;
 use \Illuminate\Routing\Controller;
@@ -34,9 +36,12 @@ class WizardController extends Controller
      */
     public function init(Wizard $wizard)
     {
+//        dd($wizard->name);
         //wizard ja contindrà el wizard al funcionar per SLUG/name la ruta
 
         //Recuperar el wizard de la sessió. 1 wizard per usuari
+//        echo "TODO INIT";
+        return view('acacha_wizard::wizard');
     }
 
 

@@ -29,16 +29,21 @@ class WizardManager
     /**
      * WizardManager constructor.
      *
+     * @param \Acacha\Wizard\Wizard $wizard
+     * @param Response $response
      * @param $step
-     * @param $wizard
      */
-    public function __construct($step, Wizard $wizard, Response $reponse)
+    public function __construct(Wizard $wizard, Response $response, $step = 1)
     {
-        $this->step = $step;
         $this->wizard = $wizard;
-        $this->response = $reponse;
+        $this->response = $response;
+        $this->step = $step;
     }
 
+    /**
+     * @param \Acacha\Wizard\Wizard $wizard
+     * @param $step_id
+     */
     public function stepInfo(Wizard $wizard, $step_id)
     {
         $this->response->json([
