@@ -1,3 +1,7 @@
+# See
+
+https://github.com/acacha/wizard_classe
+
 # Installation
 
 ```bash
